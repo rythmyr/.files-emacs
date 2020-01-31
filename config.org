@@ -99,7 +99,9 @@ useful for things like ibuffer, which do not have evil keys by default
     (setq org-directory "~/data/org/"
           org-default-notes-file (concat org-directory "notes.org")
           org-cycle-separator-lines 1
-          org-M-RET-may-split-line nil)
+          org-M-RET-may-split-line nil
+          org-habit-graph-column 65)
+    (add-to-list 'org-modules 'org-habit)
     )
 
   (use-package evil-org
