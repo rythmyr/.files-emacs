@@ -27,6 +27,7 @@ I use some of my own custom defaults as well
   (if (file-directory-p "~/.cache/emacs/autosave/") () (make-directory "~/.cache/emacs/autosave/" t))
 
   ;; use a custom file instead of init.el for those pesky packages that add custom variables
+  (if (file-exists-p "~/.emacs.d/custom.el") () (write-region "" nil "~/.emacs.d/custom.el" nil 0))
   (setq custom-file "~/.emacs.d/custom.el")
   (load custom-file)
 #+END_SRC
