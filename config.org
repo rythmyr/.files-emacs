@@ -133,7 +133,7 @@ useful for things like ibuffer, which do not have evil keys by default
         '(("t"
            "Task"
            entry
-           (file+headline "~/data/org/todo.org" "Inbox")
+           (file+olp "~/data/org/todo.org" "Inbox")
            "* TODO %?
   :LOGBOOK:
   - State \"TODO\"       from \"\"           %U
