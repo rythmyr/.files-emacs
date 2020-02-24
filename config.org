@@ -142,6 +142,16 @@ useful for things like ibuffer, which do not have evil keys by default
   - State \"TODO\"       from \"\"           %U
   :END:
   ")
+          ;; Mini retrospective of what I did yesterday and what I plan to do today, if I'm stuck on anything
+          ("d"
+           "Dailies"
+           plain
+           (file+datetree "~/data/org/dailies.org")
+           "1) Yesterday: %^{Yesterday}
+  2) Today: %^{Today}
+  3) Roadblocks: %^{Roadblocks}"
+           :tree-type week)
+          ;; Add something to the calendar. Will show up in the agenda
           ("e"
            "Appointment"
            entry
@@ -340,6 +350,13 @@ useful for things like ibuffer, which do not have evil keys by default
     (interactive)
     (find-file "/keybase/private/rythmyr/org/life.org"))
   (evil-leader/set-key "ej" 'ryth/edit-journal)
+#+END_SRC
+*** dailies
+#+BEGIN_SRC emacs-lisp
+  (defun ryth/edit-dailies()
+    (interactive)
+    (find-file "~/data/org/dailies.org"))
+  (evil-leader/set-key "ed" 'ryth/edit-dailies)
 #+END_SRC
 ** Reload config
 #+BEGIN_SRC emacs-lisp
