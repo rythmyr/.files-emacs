@@ -358,6 +358,13 @@ useful for things like ibuffer, which do not have evil keys by default
     (find-file "~/data/org/dailies.org"))
   (evil-leader/set-key "ed" 'ryth/edit-dailies)
 #+END_SRC
+*** hours
+#+BEGIN_SRC emacs-lisp
+  (defun ryth/edit-hours()
+    (interactive)
+    (find-file "~/data/org/times.org"))
+  (evil-leader/set-key "eh" 'ryth/edit-hours)
+#+END_SRC
 ** Reload config
 #+BEGIN_SRC emacs-lisp
   (defun ryth/reload-config ()
