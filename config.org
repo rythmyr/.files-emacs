@@ -1,4 +1,5 @@
 #+TITLE: Emacs Config
+#+AUTHOR: Rythmyr
 
 * Sensible defaults
 Be sure and clone [[https://github.com/hrs/sensible-defaults.el][sensible-defaults.el]] into ~/.emacs.d/lib
