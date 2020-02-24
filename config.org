@@ -131,7 +131,9 @@ useful for things like ibuffer, which do not have evil keys by default
 ** Capture Templates
 #+BEGIN_SRC emacs-lisp
   (setq org-capture-templates
-        '(("t"
+        '(
+          ;; General tasks - things I think of, just TODO and DONE are the states
+          ("t"
            "Task"
            entry
            (file+olp "~/data/org/todo.org" "Inbox")
@@ -147,12 +149,14 @@ useful for things like ibuffer, which do not have evil keys by default
            "* %?
   %T"
            :time-prompt t)
+          ;; I don't use this any more, I should remove it
           ("j"
            "Journal"
            entry
            (file+datetree "/keybase/private/rythmyr/org/life.org")
            "* %<%F %R>
   %?")
+          ;; Keeping track of when I'm working and when I'm not
           ("i" "Clock In")
           ("o" "Clock Out")
           ("iw"
