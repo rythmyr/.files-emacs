@@ -174,7 +174,7 @@ useful for things like ibuffer, which do not have evil keys by default
            "Work"
            entry
            (file+headline "~/data/org/todo.org" "Work")
-           "* TASK [[task:%^{Task ID}/][%\\1]] %?
+           "* TASK [[task:%^{Task ID}]] %?
   :LOGBOOK:
   - State \"TASK\"       from \"\"           %U
   :END:
