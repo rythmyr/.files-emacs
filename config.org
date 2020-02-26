@@ -156,9 +156,9 @@ useful for things like ibuffer, which do not have evil keys by default
           ("e"
            "Appointment"
            entry
-           (file+olp+datetree "~/data/org/todo.org" "Events")
-           "* %?
-  %T"
+           (file+olp "~/data/org/todo.org" "Events" "Future Events")
+           "* %^{Event} - %^{Location}
+  %^{Time}T"
            :time-prompt t)
           ;; I don't use this any more, I should remove it
           ("j"
