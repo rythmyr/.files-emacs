@@ -231,7 +231,7 @@ useful for things like ibuffer, which do not have evil keys by default
   (setq org-refile-targets '((org-agenda-files :maxlevel . 2))
         org-refile-use-outline-path 'file
         org-refile-allow-creating-parent-nodes 'confirm
-        org-outline-path-complete-in-steps t)
+        org-outline-path-complete-in-steps nil)
 #+END_SRC
 * Programming
 ** Overall
@@ -394,6 +394,10 @@ for better buffer/file switching (C-x b and C-x C-f)
     :config
     (ido-vertical-mode 1)
     (setq ido-vertical-define-keys 'C-n-and-C-p-only))
+  (use-package ido-completing-read+
+    :ensure t
+    :config
+    (ido-ubiquitous-mode 1))
 #+END_SRC
 ** ibuffer
 for a better buffer list
