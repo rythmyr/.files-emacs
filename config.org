@@ -247,7 +247,7 @@ useful for things like ibuffer, which do not have evil keys by default
   (use-package company
     :ensure t
     :config
-    (setq company-idle-delay 250))
+    (setq company-idle-delay .05))
 #+END_SRC
 *** projectile, for keeping projects separate
 #+BEGIN_SRC emacs-lisp
