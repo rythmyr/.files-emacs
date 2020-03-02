@@ -102,8 +102,10 @@ useful for things like ibuffer, which do not have evil keys by default
           org-default-notes-file (concat org-directory "notes.org")
           org-cycle-separator-lines 1
           org-M-RET-may-split-line nil
-          org-habit-graph-column 65
-          org-habit-show-all-today t)
+          org-habit-graph-column 40
+          org-habit-show-all-today t
+          org-habit-preceding-days 35
+          org-habit-following-days 3)
     (add-to-list 'org-modules 'org-habit)
     )
 
