@@ -282,10 +282,10 @@ useful for things like ibuffer, which do not have evil keys by default
            (csharp-mode . company-mode))
     :config
     (add-to-list 'company-backends 'company-omnisharp)
-    (evil-leader/set-key-for-mode 'omnisharp-mode "d" 'omnisharp-go-to-definition
-                                                  "u" 'omnisharp-find-usages
-                                                  "i" 'omnisharp-fix-code-issue-at-point
-                                                  "r" 'omnisharp-rename))
+    (evil-leader/set-key-for-mode 'csharp-mode "ld" 'omnisharp-go-to-definition
+                                                  "lu" 'omnisharp-find-usages
+                                                  "li" 'omnisharp-fix-code-issue-at-point
+                                                  "lr" 'omnisharp-rename))
 #+END_SRC
 ** Typescript
 #+BEGIN_SRC emacs-lisp
