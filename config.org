@@ -160,8 +160,7 @@ useful for things like ibuffer, which do not have evil keys by default
            entry
            (file+olp "~/data/org/todo.org" "Events")
            "* %^{Event} - %^{Location}
-  %^{Time}T"
-           :time-prompt t)
+  %^{Time}T")
           ;; I don't use this any more, I should remove it
           ("j"
            "Journal"
