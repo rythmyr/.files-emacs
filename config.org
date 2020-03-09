@@ -161,6 +161,12 @@ useful for things like ibuffer, which do not have evil keys by default
            (file+olp "~/data/org/events.org" "Events")
            "* %^{Event} - %^{Location}
   %^{Time}T")
+          ("r"
+           "Reminder"
+           entry
+           (file+olp "~/data/org/events.org" "Reminders")
+           "* TODO %^{Reminder}
+  SCHEDULED: %^{Time}T")
           ;; I don't use this any more, I should remove it
           ("j"
            "Journal"
