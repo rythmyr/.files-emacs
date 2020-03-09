@@ -158,7 +158,7 @@ useful for things like ibuffer, which do not have evil keys by default
           ("e"
            "Appointment"
            entry
-           (file "~/data/org/events.org")
+           (file+olp "~/data/org/events.org" "Events")
            "* %^{Event} - %^{Location}
   %^{Time}T")
           ;; I don't use this any more, I should remove it
