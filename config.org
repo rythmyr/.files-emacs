@@ -362,7 +362,7 @@ useful for things like ibuffer, which do not have evil keys by default
 #+BEGIN_SRC emacs-lisp
   (defun ryth/edit-journal ()
     (interactive)
-    (find-file "/keybase/private/rythmyr/org/life.org"))
+    (find-file "~/data/org/journal.org"))
   (evil-leader/set-key "ej" 'ryth/edit-journal)
 #+END_SRC
 *** dailies
