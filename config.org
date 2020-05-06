@@ -145,14 +145,15 @@ useful for things like ibuffer, which do not have evil keys by default
   - State \"TODO\"       from \"\"           %U
   :END:
   ")
-          ;; Mini retrospective of what I did yesterday and what I plan to do today, if I'm stuck on anything
+          ;; Mini retrospective of what I did last and what I plan to do next, if I'm stuck on anything
           ("d"
            "Dailies"
            plain
            (file+datetree "~/data/org/dailies.org")
-           "1) Yesterday: %^{Yesterday}
-  2) Today: %^{Today}
-  3) Roadblocks: %^{Roadblocks}"
+           "%U
+  1) %^{Worked On}
+  2) %^{Up Next}
+  3) %^{Roadblocks}"
            :tree-type week)
           ;; Add something to the calendar. Will show up in the agenda
           ("e"
