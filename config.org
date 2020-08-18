@@ -105,7 +105,9 @@ useful for things like ibuffer, which do not have evil keys by default
           org-habit-graph-column 40
           org-habit-show-all-today t
           org-habit-preceding-days 35
-          org-habit-following-days 3)
+          org-habit-following-days 3
+          org-todo-keyword-faces '(("DEMO" . "#6c71c4")("VRFY" . "#6c71c4"))
+          )
     (add-to-list 'org-modules 'org-habit)
     )
 
@@ -179,7 +181,8 @@ useful for things like ibuffer, which do not have evil keys by default
   %?"
           :tree-type week)
           ;; Tasks I need to do for work, with linked work items.
-          ;; These tasks follow a TODO sequence: TASK STARTED MR | VERIFY DEMO RESOLVED
+          ;; These tasks follow a TODO sequence:
+          ;; #+TODO: TASK(a!) STRT(s!) REVW(r@) VRFY(v@) DEMO(e!) | FNSH(f!)
           ;; NOTE: this requires a #+LINK task <url> to be set up in the todo.org buffer for the link to work properly
           ("w"
            "Work"
