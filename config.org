@@ -151,7 +151,7 @@ useful for things like ibuffer, which do not have evil keys by default
           ("d"
            "Dailies"
            plain
-           (file+datetree "~/data/org/dailies.org")
+           (file+olp+datetree "~/data/org/dailies.org")
            "%U
   1) %^{Worked On}
   2) %^{Up Next}
@@ -173,7 +173,7 @@ useful for things like ibuffer, which do not have evil keys by default
           ("j"
            "Journal"
            entry
-           (file+datetree "~/data/org/journal.org")
+           (file+olp+datetree "~/data/org/journal.org")
            "* %<%F %R> %^g
   :PROPERTIES:
   :RATING: %^{1-5}
