@@ -1,3 +1,4 @@
 [submodule "lib/sensible-defaults.el"]
 	path = lib/sensible-defaults.el
 	url = git@github.com:hrs/sensible-defaults.el
+	branch = main
