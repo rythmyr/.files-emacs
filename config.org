@@ -170,16 +170,80 @@ useful for things like ibuffer, which do not have evil keys by default
            (file+olp "~/data/org/events.org" "Reminders")
            "* TODO %^{Reminder}
   SCHEDULED: %^{Time}T")
-          ("j"
+          ("j" "journal")
+          ("jj"
            "Journal"
            entry
            (file+olp+datetree "~/data/org/journal.org")
            "* %<%F %R> %^g
+  %?"
+           :tree-type week)
+          ("jm"
+           "Meal"
+           entry
+           (file+olp+datetree "~/data/org/journal.org")
+           "* %<%F %R> :meal:
+  %?"
+           :tree-type week)
+          ("jr"
+           "Rating"
+           entry
+           (file+datetree "~/data/org/journal.org")
+           "* %<%F %R> :dailies:rating:
   :PROPERTIES:
   :RATING: %^{1-5}
-  :END:
-  %?"
-          :tree-type week)
+  :END:"
+           :immediate-finish t
+           :tree-type week)
+          ("ja"
+           "Awaketime"
+           entry
+           (file+datetree "~/data/org/journal.org")
+           "* %<%F %R> :dailies:awaketime:"
+           :immediate-finish t
+           :tree-type week)
+          ("jb"
+           "Bedtime"
+           entry
+           (file+datetree "~/data/org/journal.org")
+           "* %<%F %R> :dailies:bedtime:"
+           :immediate-finish t
+           :tree-type week)
+          ("jh"
+           "Hair"
+           entry
+           (file+datetree "~/data/org/journal.org")
+           "* %<%F %R> :dailies:hair:"
+           :immediate-finish t
+           :tree-type week)
+          ("jd"
+           "Deodorant"
+           entry
+           (file+datetree "~/data/org/journal.org")
+           "* %<%F %R> :dailies:deodorant:"
+           :immediate-finish t
+           :tree-type week)
+          ("jt"
+           "Teeth"
+           entry
+           (file+datetree "~/data/org/journal.org")
+           "* %<%F %R> :dailies:teeth:"
+           :immediate-finish t
+           :tree-type week)
+          ("jf"
+           "Floss"
+           entry
+           (file+datetree "~/data/org/journal.org")
+           " %<%F %R> :dailies:floss:"
+           :immediate-finish t
+           :tree-type week)
+          ("js"
+           "Shower"
+           entry
+           (file+datetree "~/data/org/journal.org")
+           "* %<%F %R> :dailies:shower:"
+           :immediate-finish t
+           :tree-type week)
           ;; Tasks I need to do for work, with linked work items.
           ;; These tasks follow a TODO sequence:
           ;; #+TODO: TASK(a!) STRT(s!) REVW(r@) VRFY(v@) DEMO(e!) | FNSH(f!)
