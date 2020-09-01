@@ -234,7 +234,7 @@ useful for things like ibuffer, which do not have evil keys by default
            "Floss"
            entry
            (file+datetree "~/data/org/journal.org")
-           " %<%F %R> :dailies:floss:"
+           "* %<%F %R> :dailies:floss:"
            :immediate-finish t
            :tree-type week)
           ("js"
@@ -242,6 +242,17 @@ useful for things like ibuffer, which do not have evil keys by default
            entry
            (file+datetree "~/data/org/journal.org")
            "* %<%F %R> :dailies:shower:"
+           :immediate-finish t
+           :tree-type week)
+          ("jw"
+           "Walk"
+           entry
+           (file+datetree "~/data/org/journal.org")
+           "* %<%F %R> :dailies:walk:
+  :PROPERTIES:
+  :WALK: %^{approx. walking time (minutes)}
+  :END:
+  "
            :immediate-finish t
            :tree-type week)
           ;; Tasks I need to do for work, with linked work items.
